@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -366,4 +367,374 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CarRent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <!-- Topbar -->
+    <div class="container-fluid topbar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-between">
+            <div>
+                <i class="bi bi-geo-alt-fill me-1"></i>123 Main Street, USA
+                <span class="mx-3"><i class="bi bi-telephone-fill me-1"></i>+1 234 567 890</span>
+                <span><i class="bi bi-envelope-fill me-1"></i>info@carrent.com</span>
+            </div>
+            <div>
+                <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <div class="logo-mark d-none d-md-flex align-items-center justify-content-center">
+                    CR
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="fw-bold lh-1 fs-4 text-primary">CarRent</div>
+                    <small class="text-muted text-uppercase" style="letter-spacing:1px;">Premium Rentals</small>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto fw-semibold">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fleet">Fleet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                </ul>
+
+                <a href="#contact" class="btn btn-primary rounded-pill px-4">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section position-relative text-center text-lg-start">
+        <!-- Background Image -->
+        <div class="hero-bg position-absolute top-0 start-0 w-100 h-100"
+            style="background: url('https://picsum.photos/1920/1080?car') center/cover no-repeat; z-index: -1;"></div>
+
+        <!-- Overlay -->
+        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"
+            style="z-index: -1;"></div>
+
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white">
+                    <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInDown">Drive Your Dream Car Today!
+                    </h1>
+                    <p class="lead mb-4 animate__animated animate__fadeInUp">Affordable rentals, a wide range of
+                        vehicles, and hassle-free booking at your fingertips.</p>
+                    <a href="#fleet"
+                        class="btn btn-primary btn-lg rounded-pill animate__animated animate__fadeInUp animate__delay-1s">View
+                        Fleet</a>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <img src="https://picsum.photos/500/350?car" alt="Car Illustration"
+                        class="img-fluid rounded shadow-lg animate__animated animate__fadeInRight">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="py-5">
+        <div class="container">
+            <div class="text-center section-title mb-5">
+                <h2>Our <span class="text-primary">Fleet</span></h2>
+                <p>Choose from our range of premium vehicles for your trip.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Sedan -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top fleet-img" alt="Sedan X1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sedan X1</h5>
+                            <p>$90/day</p>
+                            <a href="/booking.html?car=sedan-x1" class="btn btn-primary rounded-pill">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- SUV -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top fleet-img" alt="SUV Elite">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">SUV Elite</h5>
+                            <p>$120/day</p>
+                            <a href="/booking.html?car=suv-elite" class="btn btn-primary rounded-pill">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Coupe -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top fleet-img" alt="Coupe Z">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Coupe Z</h5>
+                            <p>$150/day</p>
+                            <a href="/booking.html?car=coupe-z" class="btn btn-primary rounded-pill">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Electric -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="card-img-top fleet-img" alt="Electric EV">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electric EV</h5>
+                            <p>$180/day</p>
+                            <a href="/booking.html?car=electric-ev" class="btn btn-primary rounded-pill">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center section-title mb-5">
+                <h2>About <span class="text-primary">CarRent</span></h2>
+                <p class="lead">Your trusted partner for hassle-free car rentals.</p>
+            </div>
+            <div class="row align-items-center g-4">
+                <!-- Image Column -->
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1704340142770-b52988e5b6eb?q=80&w=1100&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="img-fluid rounded shadow-lg animate__animated animate__fadeInLeft" alt="About CarRent">
+                </div>
+                <!-- Text Column -->
+                <div class="col-lg-6">
+                    <p class="mb-4">CarRent offers a wide selection of vehicles to suit all your travel needs.
+                        Whether it’s a city trip, weekend getaway, or business travel, we have the perfect car for you.
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Premium vehicles for
+                            every occasion</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Affordable pricing and
+                            discounts</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Easy online booking
+                            and pickup</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>24/7 customer support
+                        </li>
+                    </ul>
+                    <a href="#fleet"
+                        class="btn btn-primary btn-lg rounded-pill mt-3 animate__animated animate__fadeInUp">View
+                        Fleet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center section-title mb-5">
+                <h2>Meet Our <span class="text-primary">Team</span></h2>
+                <p>Professional and dedicated team ready to serve you.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Team Member 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=300"
+                            class="card-img-top" alt="John Doe">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="card-text text-muted">CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=300"
+                            class="card-img-top" alt="Jane Smith">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="card-text text-muted">Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=300"
+                            class="card-img-top" alt="Mike Johnson">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mike Johnson</h5>
+                            <p class="card-text text-muted">Support</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card team-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=entropy&cs=tinysrgb&fit=crop&w=400&h=300"
+                            class="card-img-top" alt="Lisa Brown">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lisa Brown</h5>
+                            <p class="card-text text-muted">Sales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center section-title mb-5">
+                <h2>Our <span class="text-primary">Services</span></h2>
+                <p class="lead">Everything you need for a smooth car rental experience.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Car Rentals -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center service-card p-3">
+                        <i class="bi bi-car-front fs-1 text-primary mb-3"></i>
+                        <h5 class="card-title mb-2">Car Rentals</h5>
+                        <p class="card-text">Wide range of vehicles for short-term and long-term rental.</p>
+                    </div>
+                </div>
+                <!-- Pick-up & Drop -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center service-card p-3">
+                        <i class="bi bi-geo-alt fs-1 text-primary mb-3"></i>
+                        <h5 class="card-title mb-2">Pick-up & Drop</h5>
+                        <p class="card-text">Convenient pick-up and drop-off locations near you.</p>
+                    </div>
+                </div>
+                <!-- Customer Support -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm text-center service-card p-3">
+                        <i class="bi bi-headset fs-1 text-primary mb-3"></i>
+                        <h5 class="card-title mb-2">Customer Support</h5>
+                        <p class="card-text">24/7 support for all your booking and rental queries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-6">
+                <h5 class="fw-bold mb-3">Get in Touch</h5>
+
+                <form class="needs-validation" novalidate>
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" rows="3" placeholder="Your Message" required style="resize:none;"></textarea>
+                            <div class="invalid-feedback">Please enter your message.</div>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="submit" class="btn btn-primary px-4 mt-2">Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6 text-lg-end text-center">
+                <h5 class="fw-bold mb-3">Follow Us</h5>
+                <div class="mb-3">
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-linkedin fs-4"></i></a>
+                </div>
+                <p class="mb-0">&copy; 2026 <span class="text-primary">CarRent</span>. All Rights Reserved.</p>
+                <p class="mb-0">&copy;Design by <a href="https://github.com/ravindra-dot">ravindra-dot</a></p>
+                
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+
+    <style>
+        /* Services Card Hover */
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
+    <!-- Bootstrap Icons CDN (if not already included) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top rounded-circle"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
+        });
+    </script>
+</body>
+
+>>>>>>> 219531e (Refactor code structure for improved readability and maintainability)
 </html>
