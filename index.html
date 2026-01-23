@@ -447,7 +447,7 @@
     <section id="hero" class="hero-section position-relative text-center text-lg-start">
         <!-- Background Image -->
         <div class="hero-bg position-absolute top-0 start-0 w-100 h-100"
-            style="background: url('https://picsum.photos/1920/1080?car') center/cover no-repeat; z-index: -1;"></div>
+            style="background: url('assets/hero.jpg') center/cover no-repeat; z-index: -1;"></div>
 
         <!-- Overlay -->
         <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"
@@ -456,16 +456,16 @@
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-7 text-white">
-                    <h1 class="display-4 fw-bold mb-3 animate__animated animate__fadeInDown">Drive Your Dream Car Today!
+                    <h1 class="display-4 fw-bold mb-3 text-white">
+                        <span id="typing-title"></span>
                     </h1>
-                    <p class="lead mb-4 animate__animated animate__fadeInUp">Affordable rentals, a wide range of
-                        vehicles, and hassle-free booking at your fingertips.</p>
-                    <a href="#fleet"
-                        class="btn btn-primary btn-lg rounded-pill animate__animated animate__fadeInUp animate__delay-1s">View
-                        Fleet</a>
+
+                    <p class="lead mb-4 text-white">
+                        <span id="typing-subtitle"></span>
+                    </p>
                 </div>
                 <div class="col-lg-5 d-none d-lg-block">
-                    <img src="https://picsum.photos/500/350?car" alt="Car Illustration"
+                    <img src="assets/images/car.png" alt="Car Illustration"
                         class="img-fluid rounded shadow-lg animate__animated animate__fadeInRight">
                 </div>
             </div>
@@ -481,9 +481,8 @@
                 <p>Choose from our range of premium vehicles for your trip.</p>
             </div>
             <div class="row g-4">
-                <!-- Sedan -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card fleet-c h-100 shadow-sm">
                         <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             class="card-img-top fleet-img" alt="Sedan X1">
                         <div class="card-body text-center">
@@ -493,9 +492,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- SUV -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card fleet-c h-100 shadow-sm">
                         <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             class="card-img-top fleet-img" alt="SUV Elite">
                         <div class="card-body text-center">
@@ -505,9 +503,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Coupe -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card fleet-c h-100 shadow-sm">
                         <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             class="card-img-top fleet-img" alt="Coupe Z">
                         <div class="card-body text-center">
@@ -517,9 +514,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- Electric -->
                 <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card fleet-c h-100 shadow-sm">
                         <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             class="card-img-top fleet-img" alt="Electric EV">
                         <div class="card-body text-center">
@@ -664,49 +660,50 @@
 
     <!-- Footer -->
     <footer class="footer bg-dark text-light py-5">
-    <div class="container">
+        <div class="container">
 
-        <div class="row g-5 align-items-start">
-            <div class="col-lg-6">
-                <h5 class="fw-bold mb-3">Get in Touch</h5>
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-6">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
 
-                <form class="needs-validation" novalidate>
-                    <div class="row g-2">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                            <div class="invalid-feedback">Please enter your name.</div>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-2">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <div class="invalid-feedback">Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="3" placeholder="Your Message" required
+                                    style="resize:none;"></textarea>
+                                <div class="invalid-feedback">Please enter your message.</div>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn btn-primary px-4 mt-2">Send Message</button>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                            <div class="invalid-feedback">Please enter a valid email.</div>
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control" rows="3" placeholder="Your Message" required style="resize:none;"></textarea>
-                            <div class="invalid-feedback">Please enter your message.</div>
-                        </div>
-                        <div class="col-12 text-end">
-                            <button type="submit" class="btn btn-primary px-4 mt-2">Send Message</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-6 text-lg-end text-center">
-                <h5 class="fw-bold mb-3">Follow Us</h5>
-                <div class="mb-3">
-                    <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
-                    <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
-                    <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
-                    <a href="#" class="text-light"><i class="bi bi-linkedin fs-4"></i></a>
+                    </form>
                 </div>
-                <p class="mb-0">&copy; 2026 <span class="text-primary">CarRent</span>. All Rights Reserved.</p>
-                <p class="mb-0">&copy;Design by <a href="https://github.com/ravindra-dot">ravindra-dot</a></p>
-                
+                <div class="col-lg-6 text-lg-end text-center">
+                    <h5 class="fw-bold mb-3">Follow Us</h5>
+                    <div class="mb-3">
+                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-light"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                    <p class="mb-0">&copy; 2026 <span class="text-primary">CarRent</span>. All Rights Reserved.</p>
+                    <p class="mb-0">&copy;Design by <a href="https://github.com/ravindra-dot">ravindra-dot</a></p>
+
+                </div>
+
             </div>
 
         </div>
-
-    </div>
-</footer>
+    </footer>
 
 
     <style>
@@ -717,23 +714,9 @@
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
         }
     </style>
-
-    <!-- Bootstrap Icons CDN (if not already included) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-
-    <!-- Back to Top -->
     <a href="#" class="btn btn-primary back-to-top rounded-circle"><i class="bi bi-arrow-up"></i></a>
-
-    <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-
-    <script>
-        const backToTop = document.querySelector('.back-to-top');
-        window.addEventListener('scroll', () => {
-            backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 >>>>>>> 219531e (Refactor code structure for improved readability and maintainability)

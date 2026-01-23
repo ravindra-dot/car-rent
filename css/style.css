@@ -160,6 +160,11 @@ body {
     object-fit: cover;
 }
 
+.fleet-c:hover {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease;
+}
+
 .team-img {
     height: 250px;
     object-fit: cover;
